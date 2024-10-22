@@ -1,0 +1,104 @@
+#home {
+    background-image: url('/Users/mac/Desktop/muthamizh-vila/public/desktopBg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 1200px; /* Ensures the background covers at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items:center;
+    width:100vw;
+    color: white;
+    overflow-y: scroll; /* Enables scrolling for overflow */
+}
+
+/* Adjust .logo styling for desktop view */
+.logo {
+    display: flex;
+    width: 350px;
+    margin-top:7vh;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.segment3
+{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+}
+
+.header
+{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:auto;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    justify-content:center;
+    font-size: 1.2em;
+    font-weight:bold;
+    margin-top:12px;
+}
+
+.dateDetails
+{
+    margin-top:-10%;
+    font-size:large;
+    font-weight:bold;
+}
+
+.eventName
+{
+    width:50%;
+    height:auto;
+    /* background-color: green; */
+    margin-top:1%;
+}
+
+
+
+/* Media query for mobile view (screens 768px wide or less) */
+@media only screen and (max-width: 768px) {
+    #home {
+        background-image: url('/Users/mac/Desktop/muthamizh-vila/public/mobileBg.png');
+        min-height: 100vh; /* Adjusts height for mobile */
+        width:100%;
+        background-size: cover; /* Ensures the background image fits properly */
+        background-position: center; /* Adds padding for better readability on mobile */
+    }
+
+    .header{
+        font-size:12px;
+        margin-top:3%;
+        margin-bottom:2%;
+    }
+
+    .eventName{
+        margin-top:6%;
+        width:100%;
+    }
+
+    .dateDetails
+{
+    font-size:medium;
+    font: weight 1px;
+}
+
+    .logo {
+        width: 60%;
+        height: auto;
+        margin-top:11%;
+        margin-left:-8%;
+        margin-right:-8%;
+    }
+
+    /* You can adjust the text size and other elements here as well */
+    h1, p {
+        font-size: 1.2em; /* Adjust font size for readability on smaller screens */
+        text-align: center; /* Center-align text for mobile screens */
+    }
+}
