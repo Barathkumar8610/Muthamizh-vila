@@ -1,16 +1,16 @@
 #home {
-    background-image: url('/Users/mac/Desktop/muthamizh-vila/public/desktopBg.png');
+    background-image: url('desktopBg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 1200px; /* Ensures the background covers at least the full viewport height */
+    min-height: 1500px; /* Ensures the background covers at least the full viewport height */
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items:center;
     width:100vw;
     color: white;
-    overflow-y: scroll; /* Enables scrolling for overflow */
+    
 }
 
 /* Adjust .logo styling for desktop view */
@@ -32,16 +32,17 @@
 
 .header
 {
-    display:flex;
-    flex-direction:column;
-    width:100%;
-    height:auto;
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
     padding-top: 2%;
-    padding-bottom: 1%;
-    justify-content:center;
-    font-size: 1.2em;
-    font-weight:bold;
-    margin-top:12px;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .dateDetails
@@ -49,6 +50,9 @@
     margin-top:-10%;
     font-size:large;
     font-weight:bold;
+}
+.about{
+    margin-top: 30%;
 }
 
 .eventName
@@ -59,27 +63,62 @@
     margin-top:1%;
 }
 
+.eventList
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: green;
+    width:100%;
+    height:auto;
+    margin-top:25%;
+   
+}
+
+.bubble
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100px;
+
+}
+.bubble > img{
+    width:100%;
+}
+.logo-container{
+
+}
+
 
 
 /* Media query for mobile view (screens 768px wide or less) */
 @media only screen and (max-width: 768px) {
     #home {
-        background-image: url('/Users/mac/Desktop/muthamizh-vila/public/mobileBg.png');
-        min-height: 100vh; /* Adjusts height for mobile */
-        width:100%;
-        background-size: cover; /* Ensures the background image fits properly */
-        background-position: center; /* Adds padding for better readability on mobile */
+        background-image: url('mobileBg.png');
+        
+       height: 1700px;
+        max-width: 100vw;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
     }
+    
 
     .header{
-        font-size:12px;
-        margin-top:3%;
-        margin-bottom:2%;
+       
+        font-size: 1rem;
+        margin-top: 15%;
+         
     }
 
     .eventName{
-        margin-top:6%;
-        width:100%;
+
+        margin-top: 15%;
+        width:130%;
+    }
+    .eventList{
+        margin-top: 40%;
     }
 
     .dateDetails
@@ -87,7 +126,9 @@
     font-size:medium;
     font: weight 1px;
 }
-
+.about{
+    margin-top: 155%;
+}
     .logo {
         width: 60%;
         height: auto;
