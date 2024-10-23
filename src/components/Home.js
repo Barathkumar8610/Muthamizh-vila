@@ -3,6 +3,22 @@ import Bubble from './Bubble.js';
 import '../styles/Home.css';
 
 const Home = () => {
+
+
+   // const containerStyle = {
+   //    width: '100%',
+   //    maxWidth: '800px', // Maximum width for responsiveness
+   //    height: '450px',   // Set the height of the map
+   //    margin: '0 auto',  // Center the map on the page
+   //    borderRadius: '10px', // Add rounded corners
+   //    overflow: 'hidden',   // Hide any overflow
+   //    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add a subtle shadow for depth
+   //  };
+    
+   //  const iframeStyle = {
+   //    border: '0',        // Remove the default iframe border
+   //    borderRadius: '10px', // Make the iframe corners rounded
+   //  };
   return (
      <div id="home">
         <div class="header">
@@ -39,12 +55,24 @@ const Home = () => {
 
         <div class="eventList">
            <Bubble />
+           <Bubble />
+           <Bubble />
+           <Bubble />
         </div>
 
 
-
-        <div>
-         
+        <div class="footer">
+        {/* <div style={containerStyle}> */}
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2774441318093!2d76.93338377468712!3d11.017798289146016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858dc68b80bbf%3A0x24bab8d60d2bc693!2sGovernment%20College%20of%20Technology!5e0!3m2!1sen!2sin!4v1729670142383!5m2!1sen!2sin"
+        width="50%"
+        height="25%"
+        class="iFrame"
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    {/* </div> */}
         </div>
      </div>
   );

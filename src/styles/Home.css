@@ -66,13 +66,28 @@
 .eventList
 {
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
     align-items:center;
-    background-color: green;
-    width:100%;
+   
+    width:80%;
     height:auto;
     margin-top:25%;
-   
+    flex-wrap:wrap;
+
+    animation: moveUpDown 3s ease-in-out infinite; /* Duration of 3 seconds, smooth easing, repeat infinitely */
+
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Initial position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up by 20px */
+    }
+    100% {
+        transform: translateY(0); /* Move back to the initial position */
+    }
 }
 
 .bubble
@@ -80,14 +95,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width:100px;
-
+    /* border:1px solid black; */
+    width:20%;
 }
-.bubble > img{
+
+.bubble1
+{
     width:100%;
 }
+
 .logo-container{
 
+
+}
+
+.footer
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    width:98%;
+    background-color: rgba(255, 255, 255, 0.266);
+    
+    border-radius:15px;
+}
+
+.iFrame
+{
+    width:25%;
+    height:80%;
+    border-radius:15px;
 }
 
 
@@ -121,10 +159,30 @@
         margin-top: 40%;
     }
 
+    .bubble{
+        width:50%;
+    }
+
     .dateDetails
 {
     font-size:medium;
     font: weight 1px;
+}
+
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    width:96%;
+    background-color: rgba(255, 255, 255, 0.266);
+}
+
+.iFrame{
+    height:80%;
+    width:40%;
+    margin-left:50%;
+    border:2px solid black;
 }
 .about{
     margin-top: 155%;
