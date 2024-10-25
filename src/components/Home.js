@@ -5,20 +5,6 @@ import '../styles/Home.css';
 const Home = () => {
 
 
-   // const containerStyle = {
-   //    width: '100%',
-   //    maxWidth: '800px', // Maximum width for responsiveness
-   //    height: '450px',   // Set the height of the map
-   //    margin: '0 auto',  // Center the map on the page
-   //    borderRadius: '10px', // Add rounded corners
-   //    overflow: 'hidden',   // Hide any overflow
-   //    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add a subtle shadow for depth
-   //  };
-    
-   //  const iframeStyle = {
-   //    border: '0',        // Remove the default iframe border
-   //    borderRadius: '10px', // Make the iframe corners rounded
-   //  };
   return (
      <div id="home">
         <div class="header">
