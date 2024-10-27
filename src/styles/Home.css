@@ -10,6 +10,7 @@
     align-items:center;
     width:100vw;
     color: white;
+    font-family: arima;
     
 }
 
@@ -54,6 +55,8 @@
 .about{
     /*margin-top: 30%;*/
     margin-top: 15%;
+    width:80vw;
+    font-size: 1.5rem;
 }
 
 .date{
@@ -163,8 +166,8 @@ width:100%;
     display:flex;
     justify-content: center;
     align-items: center;
-    height:200px;
-    width:98%;
+    height:220px;
+    width:95vw;
     background-color: rgba(255, 255, 255, 0.266);
     
     border-radius:15px;
@@ -174,9 +177,53 @@ width:100%;
 
 .iFrame
 {
-    width:25%;
+    width:40%;
     height:80%;
     border-radius:15px;
+    margin-right:2%;
+    margin-left:2%;
+}
+.separator{
+    width:5%;
+    height:80%;
+    /* border:2px solid black; */
+}
+
+.separator img{
+    height:100%;
+}
+
+.contact
+{
+    width:40%;
+
+    border:2px solid black;
+    height:80%;
+    margin-left:2%;
+    margin-right:2%;
+
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    padding-bottom:15px;
+}
+
+.contactHeading
+{
+    font-size: 1.5rem;
+ 
+}
+.contactHeading > h2{
+    margin-bottom: 0px;
+}
+
+.contactDetails
+{
+    font-size:1.3rem;
+   
+    margin-top:0px;
+    margin-bottom: 0px;
 }
 
 
@@ -184,7 +231,7 @@ width:100%;
 /* Media query for mobile view (screens 768px wide or less) */
 @media only screen and (max-width: 768px) {
     #home {
-        background-image: url('mobileBg.png');
+        
         
        height: 1700px;
         max-width: 100vw;
@@ -203,12 +250,26 @@ width:100%;
 
     .eventName{
 
-        margin-top: 15%;
+        margin-top: 1%;
         width:130%;
     }
     .eventList{
-        margin-top: 80%;
+        /*margin-top: 80%;*/
     }
+
+    .bubble
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border:1px solid black; */
+    width:40% !important;
+}
+
+.bubble1
+{
+    width:100%;
+}
    .date{
     flex-direction: column;
    }
@@ -216,8 +277,14 @@ width:100%;
    .englishdate > .btn{
     display: none;
    }
+   .englishdate{
+
+   }
    .tamildate > h3{
     display: none;
+   }
+   .tamildate > button{
+    margin-top: 78%;
    }
     .bubble{
         width:50%;
@@ -233,21 +300,47 @@ width:100%;
 }
 .footer{
     display:flex;
+    
     justify-content: center;
-    align-items: center;
-    height:200px;
+    align-items: left;
+   
     width:96%;
     background-color: rgba(255, 255, 255, 0.266);
 }
 
+
+.contactHeading
+{
+    font-size: 1rem;
+    margin-left:0%;
+}
+
+.contactDetails
+{
+    font-size:1rem;
+    margin-left:0%;
+    margin:0px;
+    text-align: left;
+}
+.contact{
+    text-align: left;
+    margin-left:0%;
+    margin-right:2%;
+    align-items: left;
+    justify-content: left;
+
+}
 .iFrame{
     height:80%;
     width:40%;
-    margin-left:50%;
+    
     border:2px solid black;
 }
 .about{
-    margin-top: 85%;
+   /* margin-top: 85%;*/
+   margin-top: 8%;
+   font-size: 1rem;
+   width: 90vw;
 }
 
     .logo {

@@ -1,10 +1,9 @@
 import React from 'react';
 import Bubble from './Bubble.js';
 import '../styles/Home.css';
+import separator from './separator.png'
 
 const Home = () => {
-
-
   return (
      <div id="home">
         <div class="header">
@@ -55,7 +54,10 @@ const Home = () => {
         </div>
         
         <div class="about">
-        about mtv or tmfa bla blabla தமிழ் (Tamil language) தமிழ் பலரின் தாய்மொழி ஆகும். தமிழ் செம்மொழியும் ஆகும்.  And some random content.
+        மகதத்தின் மகத்தான வித்தகனாம் ஏகலைவன் வழியில் திகழும் கோவை அரசினர் பொறியியல் கல்லூரியின் கலைவித்தகர்களாம் தமிழ் மற்றும் நுண்கலை மன்ற ஏகலைவர்களின் பெருமைபெற்ற நிகழ்வாக, தமிழின் தாய்மையைப் பறைசாற்றும் "முத்தமிழ் விழா '24" புது ஒளியுடன் அரங்கேறுகிறது. 
+
+முத்தமிழ் விழா '24 
+       
         </div>
       
         
@@ -71,6 +73,20 @@ const Home = () => {
 
 
         <div class="footer">
+
+        <div class="contact">
+           <div class="contactHeading"><h2>Contact</h2></div>
+           <p class="contactDetails">genereal secretary</p>
+           <p class="contactDetails">8940152465</p>
+           <p class="contactDetails">genereal secretary</p>
+           <p class="contactDetails">8940152465</p>
+           
+        </div>
+
+        <div class="separator">
+            <img src={separator} alt="Separator"></img>
+        </div>
+
         {/* <div style={containerStyle}> */}
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2774441318093!2d76.93338377468712!3d11.017798289146016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858dc68b80bbf%3A0x24bab8d60d2bc693!2sGovernment%20College%20of%20Technology!5e0!3m2!1sen!2sin!4v1729670142383!5m2!1sen!2sin"
