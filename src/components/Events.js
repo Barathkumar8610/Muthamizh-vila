@@ -16,8 +16,8 @@ const Event = (props) => {
         <div class="eventTitle">
             <h1>{props.eventlist[0]}</h1>
         </div>
+        
         <div class="eventList1">
-
         {Object.entries(props.eventlist[1]).map(([key, value]) => (
         <div className="details" key={key}>
           <div className="eventHeading">
