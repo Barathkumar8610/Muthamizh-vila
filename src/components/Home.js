@@ -32,6 +32,27 @@ const Home = () => {
           </div>
         </div> */}
 
+        <div class="date">
+        <div class="englishdate">
+        <h3 >நவம்பர் 15 & 16 </h3>
+        <h2>2024</h2>
+           <button class="btn">
+            RULEBOOK
+           </button> 
+        </div>
+      <div class="tamildate">
+ 
+
+         <h3 class="date1">
+            ஐப்பசி 29</h3>
+            <h3 className='date2'>கார்த்திகை 01</h3>
+            <button class="btn">
+            REGISTRATION
+           </button>  
+            
+      </div> 
+
+        </div>
         
         <div class="about">
         about mtv or tmfa bla blabla தமிழ் (Tamil language) தமிழ் பலரின் தாய்மொழி ஆகும். தமிழ் செம்மொழியும் ஆகும்.  And some random content.
@@ -40,10 +61,12 @@ const Home = () => {
         
 
         <div class="eventList">
-           <Bubble />
-           <Bubble />
-           <Bubble />
-           <Bubble />
+           <Bubble no="1"/>
+           <Bubble no="2"/>
+           <Bubble no="3"/>
+           <Bubble no="4"/>
+           <Bubble no="5"/>
+           
         </div>
 
 
