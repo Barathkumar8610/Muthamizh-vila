@@ -1,5 +1,5 @@
 #home {
-    background-image: url('desktopBg.png');
+    background-image: url('desktopBg1.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,10 +10,6 @@
     align-items:center;
     width:100vw;
     color: white;
-    font-family: "Arima", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
     
 }
 
