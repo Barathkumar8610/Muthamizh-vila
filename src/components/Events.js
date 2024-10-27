@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Events.css';
 
-const Event = () => {
+const Event = (props) => {
 
 
   return (
@@ -11,20 +11,23 @@ const Event = () => {
         </div>
         <div class="content">
         <div class="eventTitle">
-            <h1>இயற்த்தமிழ்</h1>
+            <h1>{props.eventlist[0]}</h1>
         </div>
         <div class="eventList1">
-           <div class="details">
-              <div class="eventHeading">
-                பேச்சுப்போட்டி : 
-              </div>
-              <br />
-              <div class="eventContent">
-                செவி கேட்ட செய்திகளைச் செவி கேட்கும் படி உரக்கப் பேச பேச்சுப்போட்டி.
-              </div>
-           </div>
 
-           <div class="details">
+        {Object.entries(props.eventlist[1]).map(([key, value]) => (
+        <div className="details" key={key}>
+          <div className="eventHeading">
+            {key} :
+          </div>
+          <br />
+          <div className="eventContent">
+            {value}
+          </div>
+        </div>
+      ))}
+
+           {/*<div class="details">
            <div class="eventHeading">
                 கவிதை :  
               </div>
@@ -64,7 +67,7 @@ const Event = () => {
               <div class="eventContent">
               தமிழ் குறித்து உங்கள் அறிதல்களைத் தமிழில் விடை எழுதத் தமிழ் வினாடி வினா.
               </div>
-           </div>
+           </div>*/}
         </div>
         </div>
      </div>
