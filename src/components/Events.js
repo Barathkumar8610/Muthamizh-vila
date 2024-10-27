@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Events.css';
+import arrow from "./arrow.png";
 
 const Event = (props) => {
 
@@ -7,7 +8,7 @@ const Event = (props) => {
   return (
      <div id="Event">
         <div class="arrow">
-           <img src="arrow.png" alt="Arrow"></img>
+           <img src={arrow} alt="Arrow"></img>
         </div>
         <div class="content">
         <div class="eventTitle">
