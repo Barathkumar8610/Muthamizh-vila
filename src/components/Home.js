@@ -1,7 +1,12 @@
 import React from 'react';
 import Bubble from './Bubble.js';
 import '../styles/Home.css';
-import separator from './separator.png'
+import separator from './separator.png';
+import iyal from "./iyal_img.png";
+import isai from "./isai_img.png";
+import nadanam from "./nadanam_img.png";
+import naadagam from "./naadagam_img.png";
+import chithiram from "./chithiram_img.png";
 
 const Home = () => {
   return (
@@ -54,20 +59,23 @@ const Home = () => {
         </div>
         
         <div class="about">
+        <h2>முத்தமிழ் விழா '24 </h2>
         மகதத்தின் மகத்தான வித்தகனாம் ஏகலைவன் வழியில் திகழும் கோவை அரசினர் பொறியியல் கல்லூரியின் கலைவித்தகர்களாம் தமிழ் மற்றும் நுண்கலை மன்ற ஏகலைவர்களின் பெருமைபெற்ற நிகழ்வாக, தமிழின் தாய்மையைப் பறைசாற்றும் "முத்தமிழ் விழா '24" புது ஒளியுடன் அரங்கேறுகிறது. 
 
-முத்தமிழ் விழா '24 
+
        
         </div>
       
         
 
         <div class="eventList">
-           <Bubble no="1"/>
-           <Bubble no="2"/>
-           <Bubble no="3"/>
-           <Bubble no="4"/>
-           <Bubble no="5"/>
+        
+           <Bubble no="1" img={iyal} link="/event/iyal"/>
+           
+           <Bubble no="2" img={isai} link="/event/isai"/>
+           <Bubble no="3" img={nadanam} link="/event/nadanam"/>
+           <Bubble no="4" img={naadagam} link="/event/naadagam"/>
+           <Bubble no="5" img={chithiram} link="/event/chithiram"/>
            
         </div>
 
@@ -76,10 +84,10 @@ const Home = () => {
 
         <div class="contact">
            <div class="contactHeading"><h2>Contact</h2></div>
-           <p class="contactDetails">genereal secretary</p>
-           <p class="contactDetails">8940152465</p>
-           <p class="contactDetails">genereal secretary</p>
-           <p class="contactDetails">8940152465</p>
+           <p class="contactDetails">Madhumitha</p>
+           <p class="contactDetails">9361140647</p>
+           <p class="contactDetails">selvaKumar</p>
+           <p class="contactDetails">7598232063</p>
            
         </div>
 

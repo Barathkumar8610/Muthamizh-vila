@@ -8,7 +8,9 @@ const Event = (props) => {
   return (
      <div id="Event">
         <div class="arrow">
+        <a href="/">
            <img src={arrow} alt="Arrow"></img>
+           </a>
         </div>
         <div class="content">
         <div class="eventTitle">
